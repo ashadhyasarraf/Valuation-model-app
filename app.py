@@ -7,7 +7,7 @@ from valuation_summary import generate_pdf_summary
 
 st.title("\U0001F4C8 Valuation Model App")
 
-st.header("Step 1: Upload Excel File with Financials")
+st.header("Upload Excel File with Financials")
 uploaded_file = st.file_uploader("Upload your Excel file (.xlsx)", type=["xlsx"])
 
 # Initialize placeholders for final outputs
