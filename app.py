@@ -10,6 +10,17 @@ st.title("\U0001F4C8 Valuation Model App")
 st.header("Upload Excel File with Financials")
 uploaded_file = st.file_uploader("Upload your Excel file (.xlsx)", type=["xlsx"])
 
+import streamlit as st
+
+# Add this where you want the download button to appear
+with open("valuation_template.xlsx", "rb") as template_file:
+    st.download_button(
+        label="📥 Download Excel Template",
+        data=template_file,
+        file_name="valuation_template.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    )
+
 # Initialize placeholders for final outputs
 dcf_value = 0
 pe_equity = 0
