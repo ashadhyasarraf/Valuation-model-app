@@ -1,14 +1,19 @@
-# Valuation-model-app
+# Valuation Model App 📊
 
-A financial valuation app built using Python and Streamlit. Features DCF and comparable company valuation based on Excel financial input.
+This is a Streamlit-based web app that lets users upload company financials and perform:
+- DCF Valuation
+- Multiples-based valuation (P/E, EV/EBITDA)
+- Auto-calculation of WACC and CAPM
+- Export valuation summary as PDF
 
-## Features
-- Upload financials
-- DCF valuation model
-- WACC & CAPM calculator
-- Comparable company analysis
-- Streamlit frontend
+## Usage
+1. Upload an Excel sheet with required metrics
+2. Enter assumptions
+3. View results and download the PDF summary
 
-## Run the app
-```bash
-streamlit run app.py
+## Built With
+- Python
+- Streamlit
+- Pandas
+- fpdf
+
