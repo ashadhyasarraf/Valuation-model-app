@@ -9,6 +9,14 @@ st.title("\U0001F4C8 Valuation Model App")
 
 st.header("Upload Excel File with Financials")
 uploaded_file = st.file_uploader("Upload your Excel file (.xlsx)", type=["xlsx"])
+# Add Excel template download
+with open("valuation_template.xlsx", "rb") as template_file:
+    btn = st.download_button(
+        label="📥 Download Excel Template",
+        data=template_file,
+        file_name="valuation_template.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    )
 
 import streamlit as st
 
