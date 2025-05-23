@@ -12,7 +12,7 @@ uploaded_file = st.file_uploader("Upload your Excel file (.xlsx)", type=["xlsx"]
 import streamlit as st
 
 # Add this where you want the download button to appear
-with open("valuation_template.xlsx", "rb") as template_file:
+with open("valuation_template.1.xlsx", "rb") as template_file:
     st.download_button(
         label="📥 Download Excel Template",
         data=template_file,
